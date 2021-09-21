@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Framed Page</title>
+</head>
+<body style="background-color: lightcoral;">
+<h2>This is the framed site</h2>
+<h3>Where are my cookies?</h3>
+
+<script>
+  document.cookie="mycookie=myvalue;;max-age=31536000;path=/;secure'
+    if (document.cookie.indexOf('mycookie') > -1)
+        alert("You've got cookies :)");
+    else
+        alert('Too bad :( No cookies for framed sites :(');
+</script>
+</body>
+</html>
