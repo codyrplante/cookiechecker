@@ -4,16 +4,19 @@
     <title>Demo Page - Cookie-in-iframe</title>
 </head>
 <body>
+<script>
+    function redirectToCookie() {
+        window.location.replace("window.location.origin" + "/redirect.html")
+    }
+</script>
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
         <h3>Main site which uses iframe with 3rd party content</h3>
-        <iframe src="" width="50%" height="400" frameborder="2"></iframe>
+        <iframe src="/framed.html" width="50%" height="400" frameborder="2"></iframe>
         <br>
         see, you don't have cookies :(
         <br>
-        <a href="">fixed page</a>
-        <br>
-        <a href="">back to index</a>
+        <button onclick="redirectToCookie">Redirect!</button>
     </section>
 </div>
 </body>
