@@ -6,7 +6,7 @@
 <body>
 <script>
     function redirectToCookie() {
-        window.location.replace("window.location.origin" + "/redirect.html")
+        window.location.replace(window.location.origin + "/redirect.html")
     }
 </script>
 <div id="main_content_wrap" class="outer">
@@ -16,7 +16,7 @@
         <br>
         see, you don't have cookies :(
         <br>
-        <button onclick="redirectToCookie">Redirect!</button>
+        <button onclick="redirectToCookie()">Redirect!</button>
     </section>
 </div>
 </body>
